@@ -1,0 +1,137 @@
+[
+  {
+    "rtt_ms": 0,
+    "v2_hold": {
+      "success": 0.9967,
+      "t_median": 1.58
+    },
+    "v3_chunk": {
+      "success": 1.0,
+      "t_median": 1.64
+    },
+    "v3_chunk_noskip": {
+      "success": 1.0,
+      "t_median": 1.64
+    }
+  },
+  {
+    "rtt_ms": 50,
+    "v2_hold": {
+      "success": 1.0,
+      "t_median": 1.48
+    },
+    "v3_chunk": {
+      "success": 0.9967,
+      "t_median": 1.66
+    },
+    "v3_chunk_noskip": {
+      "success": 1.0,
+      "t_median": 1.52
+    }
+  },
+  {
+    "rtt_ms": 100,
+    "v2_hold": {
+      "success": 1.0,
+      "t_median": 1.7
+    },
+    "v3_chunk": {
+      "success": 0.9967,
+      "t_median": 1.74
+    },
+    "v3_chunk_noskip": {
+      "success": 1.0,
+      "t_median": 1.64
+    }
+  },
+  {
+    "rtt_ms": 150,
+    "v2_hold": {
+      "success": 0.9867,
+      "t_median": 2.02
+    },
+    "v3_chunk": {
+      "success": 0.9967,
+      "t_median": 1.78
+    },
+    "v3_chunk_noskip": {
+      "success": 0.9933,
+      "t_median": 2.06
+    }
+  },
+  {
+    "rtt_ms": 200,
+    "v2_hold": {
+      "success": 0.9433,
+      "t_median": 2.74
+    },
+    "v3_chunk": {
+      "success": 0.9967,
+      "t_median": 1.84
+    },
+    "v3_chunk_noskip": {
+      "success": 0.97,
+      "t_median": 2.6
+    }
+  },
+  {
+    "rtt_ms": 250,
+    "v2_hold": {
+      "success": 0.6767,
+      "t_median": 3.48
+    },
+    "v3_chunk": {
+      "success": 0.9967,
+      "t_median": 1.94
+    },
+    "v3_chunk_noskip": {
+      "success": 0.86,
+      "t_median": 3.08
+    }
+  },
+  {
+    "rtt_ms": 300,
+    "v2_hold": {
+      "success": 0.0867,
+      "t_median": 3.67
+    },
+    "v3_chunk": {
+      "success": 0.9867,
+      "t_median": 2.1
+    },
+    "v3_chunk_noskip": {
+      "success": 0.3,
+      "t_median": 3.6
+    }
+  },
+  {
+    "rtt_ms": 400,
+    "v2_hold": {
+      "success": 0.0,
+      "t_median": null
+    },
+    "v3_chunk": {
+      "success": 0.8867,
+      "t_median": 2.66
+    },
+    "v3_chunk_noskip": {
+      "success": 0.0033,
+      "t_median": 2.92
+    }
+  },
+  {
+    "rtt_ms": 500,
+    "v2_hold": {
+      "success": 0.0,
+      "t_median": null
+    },
+    "v3_chunk": {
+      "success": 0.0,
+      "t_median": null
+    },
+    "v3_chunk_noskip": {
+      "success": 0.0,
+      "t_median": null
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "model": "reach-v2",
+    "robots": 4,
+    "targets": 20,
+    "delay_ms": 150,
+    "jitter_ms": 37.5,
+    "success": 1.0,
+    "rtt_p50_ms": 178.4,
+    "stale_replies_dropped": 883
+  },
+  {
+    "model": "reach-v2",
+    "robots": 4,
+    "targets": 20,
+    "delay_ms": 300,
+    "jitter_ms": 75.0,
+    "success": 0.15,
+    "rtt_p50_ms": 343.5,
+    "stale_replies_dropped": 2696
+  },
+  {
+    "model": "reach-v3",
+    "robots": 4,
+    "targets": 20,
+    "delay_ms": 150,
+    "jitter_ms": 37.5,
+    "success": 1.0,
+    "rtt_p50_ms": 178.9,
+    "stale_replies_dropped": 689
+  },
+  {
+    "model": "reach-v3",
+    "robots": 4,
+    "targets": 20,
+    "delay_ms": 300,
+    "jitter_ms": 75.0,
+    "success": 1.0,
+    "rtt_p50_ms": 344.0,
+    "stale_replies_dropped": 1219
+  }
+]

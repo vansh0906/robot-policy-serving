@@ -1,0 +1,44 @@
+{
+  "name": "reach-v1",
+  "K": 1,
+  "horizon_s": 0.02,
+  "obs_dim": 18,
+  "action_dim": 3,
+  "note": "Research handoff. One command per reply; trained on the lab's narrow target range.",
+  "training": {
+    "episodes": 800,
+    "samples": 160000,
+    "target_range": "narrow",
+    "dart_noise": 0.0,
+    "epochs": 30,
+    "hidden": [
+      256,
+      256
+    ],
+    "final_mse": 0.000122
+  },
+  "onnx": {
+    "ir_version": 8,
+    "opset": 17,
+    "parity_max_abs": 5.513429641723633e-07,
+    "sha256": "9819727a3ee88fae045202d6f1d1159ba2605e72db25a6240f358004ef6d2eda"
+  },
+  "rated_rtt_ms": 100,
+  "gate": {
+    "rtt_0ms": {
+      "success": 0.7,
+      "t_median": 1.56,
+      "final_err_mm_median": 6.1382,
+      "limit_hit_rate": 0.02
+    },
+    "rtt_100ms": {
+      "success": 0.7267,
+      "t_median": 1.56,
+      "final_err_mm_median": 6.1384,
+      "limit_hit_rate": 0.04
+    },
+    "passed": false
+  },
+  "deployable": false,
+  "sha256": "9819727a3ee88fae045202d6f1d1159ba2605e72db25a6240f358004ef6d2eda"
+}

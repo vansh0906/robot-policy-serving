@@ -1,0 +1,44 @@
+{
+  "name": "reach-v3",
+  "K": 25,
+  "horizon_s": 0.5,
+  "obs_dim": 18,
+  "action_dim": 75,
+  "note": "Predicts a 0.5 s action chunk; robots skip the part already spent in flight (customer report: oscillation on a slow cellular link).",
+  "training": {
+    "episodes": 800,
+    "samples": 160000,
+    "target_range": "full",
+    "dart_noise": 0.3,
+    "epochs": 30,
+    "hidden": [
+      256,
+      256
+    ],
+    "final_mse": 0.000634
+  },
+  "onnx": {
+    "ir_version": 8,
+    "opset": 17,
+    "parity_max_abs": 1.0728836059570312e-06,
+    "sha256": "594adf40f6b9b48a4bef1c3ca0a14af551804152c0490f0a456a72f58894df5d"
+  },
+  "rated_rtt_ms": 300,
+  "gate": {
+    "rtt_0ms": {
+      "success": 1.0,
+      "t_median": 1.64,
+      "final_err_mm_median": 1.6548,
+      "limit_hit_rate": 0.0
+    },
+    "rtt_300ms": {
+      "success": 0.9867,
+      "t_median": 2.1,
+      "final_err_mm_median": 2.4738,
+      "limit_hit_rate": 0.0
+    },
+    "passed": true
+  },
+  "deployable": true,
+  "sha256": "594adf40f6b9b48a4bef1c3ca0a14af551804152c0490f0a456a72f58894df5d"
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policy Serving Console</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+<header>
+  <h1>Policy Serving Console</h1>
+  <span id="conn" class="pill off">connecting…</span>
+  <span id="metrics" class="muted"></span>
+</header>
+<main>
+  <section class="panel" id="left">
+    <h2>Robots</h2>
+    <div class="row">
+      <label>Model <select id="newModel"></select></label>
+    </div>
+    <div class="row">
+      <label>Delay <input id="newDelay" type="number" min="0" max="2000" value="0" step="10"> ms</label>
+      <label>Jitter <input id="newJitter" type="number" min="0" max="500" value="0" step="5"> ms</label>
+    </div>
+    <button id="launch">Launch simulated robot</button>
+    <p id="launchErr" class="err"></p>
+    <table id="robots"><thead><tr><th>Robot</th><th>Model</th><th>RTT p50</th><th>Reached</th></tr></thead><tbody></tbody></table>
+    <h2>Episodes</h2>
+    <table id="episodes"><thead><tr><th>#</th><th>Robot</th><th>Model</th><th>Delay</th><th>Result</th></tr></thead><tbody></tbody></table>
+  </section>
+
+  <section id="view">
+    <canvas id="gl"></canvas>
+    <div id="overlay">
+      <div id="status" class="muted">Launch a robot to start.</div>
+      <div id="replayBar" hidden>
+        <button id="play">Pause</button>
+        <input id="scrub" type="range" min="0" max="0" value="0">
+        <span id="replayInfo"></span>
+        <button id="live">Back to live</button>
+      </div>
+    </div>
+    <p class="hint">Drag to orbit · scroll to zoom · click the floor to move the target (at the height set on the right)</p>
+  </section>
+
+  <section class="panel" id="right">
+    <h2 id="selTitle">No robot selected</h2>
+    <div id="selControls" hidden>
+      <div class="row"><label>Model <select id="selModel"></select></label></div>
+      <div class="row"><label>Network delay <input id="selDelay" type="range" min="0" max="600" step="10"></label><span id="selDelayV"></span></div>
+      <div class="row"><label>Jitter <input id="selJitter" type="range" min="0" max="200" step="5"></label><span id="selJitterV"></span></div>
+      <div class="row"><label><input id="selAuto" type="checkbox"> New random target after each reach</label></div>
+      <h3>Target (m)</h3>
+      <div class="row xyz">
+        <label>x <input id="tx" type="number" step="0.01"></label>
+        <label>y <input id="ty" type="number" step="0.01"></label>
+        <label>z <input id="tz" type="number" step="0.01" value="0.30"></label>
+      </div>
+      <div class="row"><button id="sendTarget">Send target</button><button id="randTarget">Random target</button></div>
+      <p id="selErr" class="err"></p>
+      <h3>Round-trip time (ms)</h3>
+      <canvas id="rtt" height="90"></canvas>
+      <dl id="selStats"></dl>
+    </div>
+  </section>
+</main>
+<script src="/web/gl.js"></script>
+<script src="/web/app.js"></script>
+</body>
+</html>

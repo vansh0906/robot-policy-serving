@@ -1,0 +1,44 @@
+{
+  "name": "reach-v2",
+  "K": 1,
+  "horizon_s": 0.02,
+  "obs_dim": 18,
+  "action_dim": 3,
+  "note": "Retrained on the full reachable workspace (customer report: misses near the workspace edge).",
+  "training": {
+    "episodes": 800,
+    "samples": 160000,
+    "target_range": "full",
+    "dart_noise": 0.3,
+    "epochs": 30,
+    "hidden": [
+      256,
+      256
+    ],
+    "final_mse": 0.000416
+  },
+  "onnx": {
+    "ir_version": 8,
+    "opset": 17,
+    "parity_max_abs": 5.62518835067749e-07,
+    "sha256": "8f9ec1557a8883723e550c7926f50c9449cd13259949e9226ff6d24df29c60fb"
+  },
+  "rated_rtt_ms": 100,
+  "gate": {
+    "rtt_0ms": {
+      "success": 0.9967,
+      "t_median": 1.58,
+      "final_err_mm_median": 0.9976,
+      "limit_hit_rate": 0.0
+    },
+    "rtt_100ms": {
+      "success": 1.0,
+      "t_median": 1.7,
+      "final_err_mm_median": 0.9976,
+      "limit_hit_rate": 0.0033
+    },
+    "passed": true
+  },
+  "deployable": true,
+  "sha256": "8f9ec1557a8883723e550c7926f50c9449cd13259949e9226ff6d24df29c60fb"
+}

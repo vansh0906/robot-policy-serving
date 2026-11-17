@@ -1,0 +1,15 @@
+{
+  "tasks": 600,
+  "inside_lab_range": 88,
+  "outside_lab_range": 512,
+  "reach-v1": {
+    "all": 0.6667,
+    "inside": 1.0,
+    "outside": 0.6094
+  },
+  "reach-v2": {
+    "all": 0.9983,
+    "inside": 1.0,
+    "outside": 0.998
+  }
+}
